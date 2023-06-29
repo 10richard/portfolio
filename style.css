@@ -1,0 +1,16 @@
+/**Color Palette**/
+/**Dominant: #230007**/
+/**Secondary: #FAF0CA (also white and black)**/
+/**Accent: #7A6C5D**/
+
+/**All of them look like shades of coffee, and i'm
+currently drinking one lol**/
+
+p strong {
+    color: #0603c8;
+}
+
+.about {
+    display: flex;
+}
+
