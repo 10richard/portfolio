@@ -1,13 +1,25 @@
 /**Color Palette**/
-/**Dominant: #230007**/
-/**Secondary: #FAF0CA (also white and black)**/
+/**Dominant: #0b1d51**/
+/**Secondary: #02c6e4 (also white and black)**/
 /**Accent: #7A6C5D**/
 
-/**All of them look like shades of coffee, and i'm
-currently drinking one lol**/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.about {
+    background-color: #0b1d51;
+    color: white;
+    font-family: sans-serif;
+}
+
+.name {
+    color: #02c6e4;
+}
 
 p strong {
-    color: #0603c8;
+    color: #02c6e4;
 }
 
 .about {
