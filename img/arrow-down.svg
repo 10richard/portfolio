@@ -1,0 +1,9 @@
+<svg width="6rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<polyline data-name="Right" fill="none" id="Right-2" points="7 13.4 12 18.5 17 13.4" stroke="#02c6e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+<circle class="circle" cx="12" cy="12" r="11" fill="none" stroke="black" stroke-width="1"/>
+
+<line fill="none" stroke="#02c6e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="5.5" y2="16.2"/>
+
+</svg>
