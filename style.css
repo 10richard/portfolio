@@ -6,12 +6,32 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Make h1 responsive - and maybe p as well (looks 
+bad when width gets smaller than 730px) **/
+.intro>h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.intro>p {
+    font-size: 1rem;
 }
 
 .about {
     background-color: #0b1d51;
     color: white;
-    font-family: sans-serif;
 }
 
 .name {
