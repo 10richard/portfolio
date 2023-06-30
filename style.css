@@ -29,7 +29,7 @@ h1 span {
     color: #02c6e4;
 }
 
-.intro>p {
+.intro p {
     font-size: 1rem;
     margin-bottom: 100px;
 }
@@ -39,17 +39,24 @@ h1 span {
 }
 
 /**About section**/
-.about {
-    height: 50vh;
+#about {
+    height: 80vh;
     background-color: #0b1d51;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-of-me img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.text {
+    width: 600px;
 }
 
 p strong {
     color: #02c6e4;
 }
-
-.about {
-    display: flex;
-}
-
