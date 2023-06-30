@@ -7,6 +7,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 .intro {
@@ -22,20 +23,26 @@ bad when width gets smaller than 730px) **/
 .intro>h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
-    align-self: center;
+}
+
+h1 span {
+    color: #02c6e4;
 }
 
 .intro>p {
     font-size: 1rem;
+    margin-bottom: 100px;
 }
 
+.down-arrow:hover {
+    opacity: 60%;
+}
+
+/**About section**/
 .about {
+    height: 50vh;
     background-color: #0b1d51;
     color: white;
-}
-
-.name {
-    color: #02c6e4;
 }
 
 p strong {
