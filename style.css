@@ -72,3 +72,37 @@ h1 span {
 p strong {
     color: #02c6e4;
 }
+
+/**Tech section**/
+#tech {
+    height: 60vh;
+    /**Adding so you can experiment later**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tech h2 {
+    font-size: 2.5em;
+}
+
+/**Make grid display 2 in each column after screen size is too small**/ 
+/**Possibly change from grid to flex (content > layout)**/
+.logos {
+    background-color: #0b1d51;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.logos a {
+    /**Polish border around logos (different color, etc.)**/
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 5px;
+}
+
+.logos a img {
+    min-width: 0.5vw;
+    width: 10vw;
+}
