@@ -3,6 +3,8 @@
 /**Secondary: #02c6e4 (also white and black)**/
 /**Accent: #7A6C5D**/
 
+/**Add scroll animations l8r**/
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -39,8 +41,9 @@ h1 span {
 }
 
 /**About section**/
+/**Missing something, don't know what at the moment tho**/
 #about {
-    height: 80vh;
+    height: 75vh;
     background-color: #0b1d51;
     color: white;
     display: flex;
@@ -50,11 +53,20 @@ h1 span {
 
 .img-of-me img {
     width: 300px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .text {
-    width: 600px;
+    width: 425px;
+    margin-right: 200px;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+}
+
+.text p:first-of-type {
+    margin: 50px 0 20px 0;
 }
 
 p strong {
