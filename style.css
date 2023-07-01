@@ -10,8 +10,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none
 }
 
+/**Intro section**/
 .intro {
     height: 100vh;
     display: flex;
@@ -75,7 +77,8 @@ p strong {
 
 /**Tech section**/
 #tech {
-    height: 60vh;
+    height: 70vh;
+    margin: 40px 0 10px 0;
     /**Adding so you can experiment later**/
     display: flex;
     flex-direction: column;
@@ -84,25 +87,50 @@ p strong {
 
 #tech h2 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 /**Make grid display 2 in each column after screen size is too small**/ 
 /**Possibly change from grid to flex (content > layout)**/
 .logos {
-    background-color: #0b1d51;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    background-color: #0b1d51;
+    border-radius: 5px;
+    padding: 0 20px;
 }
 
 .logos a {
     /**Polish border around logos (different color, etc.)**/
-    border-style: solid;
-    border-color: lightblue;
-    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+.logos a:hover {
+    opacity: 80%;
 }
 
 .logos a img {
-    min-width: 0.5vw;
-    width: 10vw;
+    margin-bottom: 8px;
+    min-width: 5em;
+    width: 11vw;
+    filter: drop-shadow(0 0 1.2px black);
+}
+
+.logos a p {
+    color: #02c6e4;
+    font-size: 1.2rem;
+}
+
+/**Projects section**/
+#projects {
+    display: flex;
+    justify-content: center;
 }
