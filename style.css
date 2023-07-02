@@ -3,7 +3,7 @@
 /**Secondary: #02c6e4 (also white and black)**/
 /**Accent: #7A6C5D**/
 
-/**Add scroll animations l8r**/
+/*Add scroll animations l8r*/
 
 * {
     margin: 0px;
@@ -13,7 +13,7 @@
     text-decoration: none
 }
 
-/**Intro section**/
+/*Intro section*/
 .intro {
     height: 100vh;
     display: flex;
@@ -22,8 +22,8 @@
     align-items: center;
 }
 
-/**Make h1 responsive - and maybe p as well (looks 
-bad when width gets smaller than 730px) **/
+/*Make h1 responsive - and maybe p as well (looks 
+bad when width gets smaller than 730px) */
 .intro>h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
@@ -38,12 +38,19 @@ h1 span {
     margin-bottom: 100px;
 }
 
-.down-arrow:hover {
-    opacity: 60%;
+/*Add animation when arrow is hovered over*/
+.down-arrow:hover polyline, .down-arrow:hover line {
+    stroke: #38d4ec !important;
+    transition: 0.5s;
 }
 
-/**About section**/
-/**Missing something, don't know what at the moment tho**/
+.down-arrow:hover circle {
+    stroke: #0b1d51 !important;
+    transition: 0.5s;
+}
+
+/*About section*/
+/*Missing something, don't know what at the moment tho*/
 #about {
     height: 75vh;
     background-color: #0b1d51;
@@ -75,11 +82,43 @@ p strong {
     color: #02c6e4;
 }
 
-/**Tech section**/
+.social-links {
+    margin-left: 40px;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.social-links a:hover img {
+    opacity: 100%;
+    transition: 0.8s;
+}
+
+.social-links a:hover p {
+    color: white;
+    opacity: 100%;
+}
+
+.social-links a img {
+    margin-bottom: 8px;
+    opacity: 60%;
+}
+
+.social-links a p {
+    font-size: 0.8rem;
+    color: grey;
+    opacity: 60% ;
+}
+
+/*Tech section*/
 #tech {
     height: 70vh;
-    margin: 40px 0 10px 0;
-    /**Adding so you can experiment later**/
+    margin-top: 40px;
+    /*Adding so you can experiment later*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,18 +129,18 @@ p strong {
     margin-bottom: 10px;
 }
 
-/**Make grid display 2 in each column after screen size is too small**/ 
-/**Possibly change from grid to flex (content > layout)**/
+/*Make grid display 2 in each column after screen size is too small*/ 
+/*Possibly change from grid to flex (content > layout)*/
 .logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background-color: #0b1d51;
     border-radius: 5px;
     padding: 0 20px;
 }
 
 .logos a {
-    /**Polish border around logos (different color, etc.)**/
+    /*Polish border around logos (different color, etc.)*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +150,7 @@ p strong {
     background-color: white;
     margin: 20px;
     padding: 10px;
+    width: minmax(2px, 250px);
 }
 
 .logos a:hover {
@@ -119,7 +159,7 @@ p strong {
 
 .logos a img {
     margin-bottom: 8px;
-    min-width: 5em;
+    min-width: 2em;
     width: 11vw;
     filter: drop-shadow(0 0 1.2px black);
 }
@@ -129,8 +169,26 @@ p strong {
     font-size: 1.2rem;
 }
 
-/**Projects section**/
+
+/*Projects section*/
 #projects {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 40px;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+}
+
+/*Contact section*/
+#contact {
+    display: flex;
     justify-content: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
 }
